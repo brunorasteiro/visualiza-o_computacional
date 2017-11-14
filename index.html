@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <title>Tarefa 4 - Visualização computacional</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body style="text-align: center">
+        <h1 >Times World University Rankings (2016)</h1>
+        
+        <script src="//d3js.org/d3.v3.min.js"></script>
+        <script src="js/parallel_coordinates.js"></script>
+    </body>
+</head>
+
+<style>
+    svg {
+        font: 11px sans-serif;
+        }                        
+
+    .background path {
+      fill: none;
+      stroke: #ddd;
+      shape-rendering: crispEdges;
+    }
+
+    .foreground path {
+      fill: none;
+      stroke: steelblue;
+    }
+
+    .brush .extent {
+      fill-opacity: .3;
+      stroke: #fff;
+      shape-rendering: crispEdges;
+    }
+
+    .axis line,
+    .axis path {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+
+    .axis text {
+      text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+      cursor: move;
+    }
+</style>
