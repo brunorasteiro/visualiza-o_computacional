@@ -18,7 +18,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("../data.csv", function(error, file) {
+d3.csv("data.csv", function(error, file) {
 
   // Extract the list of dimensions and create a scale for each.
   x.domain(dimensions = d3.keys(file[0]).filter(function(d) {
